@@ -1,28 +1,13 @@
+import { FizzBuzzStrategy } from "./fizzbuzz-strategy";
+
 export class FizzBuzzApp {
+  strategy: FizzBuzzStrategy;
 
-    print(num: number): string {
-      if(this.isFizz(num)){
-        if(this.isBuzz(num)){
-          return "FizzBuzz";
-        }else{
-          return "Fizz";
-        }
-      }
-      if(this.isBuzz(num)){
-        if(this.isFizz(num)){
-          return "FizzBuzz"
-        }else{
-          return "Buzz";
-        }
-      }
-      return num.toString();
-    }
-
-  private isBuzz(num: number) {
-    return num % 5 === 0;
+  constructor(strategy: FizzBuzzStrategy) {
+    this.strategy = strategy;
   }
 
-  private isFizz(num: number) {
-    return num % 3 === 0;
+  print(num: number): string {
+    return this.strategy.toRepresentation(num);
   }
-  }
+}
