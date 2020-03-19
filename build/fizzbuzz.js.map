@@ -1,0 +1,1 @@
+{"version":3,"file":"fizzbuzz.js","sourceRoot":"","sources":["../src/fizzbuzz.ts"],"names":[],"mappings":";;AAAA,uDAAmD;AAEnD,MAAa,WAAW;IAEtB,KAAK;QACH,KAAI,IAAI,CAAC,GAAC,CAAC,EAAE,CAAC,GAAC,GAAG,EAAG,CAAC,EAAE,EAAC;YACvB,OAAO,CAAC,GAAG,CAAC,IAAI,gCAAc,CAAC,CAAC,CAAC,CAAC,gBAAgB,EAAE,CAAC,CAAC;SACvD;IACH,CAAC;CACF;AAPD,kCAOC"}

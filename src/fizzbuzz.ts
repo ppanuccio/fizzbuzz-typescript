@@ -1,13 +1,12 @@
-import { FizzBuzzStrategy } from "./fizzbuzz-strategy";
+import { FizzBuzzNumber } from "./fizzbuzz-number";
 
 export class FizzBuzzApp {
-  strategy: FizzBuzzStrategy;
 
-  constructor(strategy: FizzBuzzStrategy) {
-    this.strategy = strategy;
-  }
-
-  print(num: number): string {
-    return this.strategy.toRepresentation(num);
+  print(){
+    for(let i=0; i<100 ; i++){
+      console.log(new FizzBuzzNumber(i).toRepresentation());
+    }
   }
 }
+
+
