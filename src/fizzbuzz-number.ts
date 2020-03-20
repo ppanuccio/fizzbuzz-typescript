@@ -23,9 +23,13 @@ export class FizzBuzzNumber {
         return this.value.toString();
       }
       private isBuzz(num: number) {
-        return num % 5 === 0;
+        return num % 5 === 0 || this.containsDigit("5", num.toString());
       }
       private isFizz(num: number) {
-        return num % 3 === 0;
+        return num % 3 === 0 || this.containsDigit("3", num.toString());
+      }
+
+      private containsDigit(digit : string, number: string) : boolean{
+        return number.search(digit)!== -1;
       }
 }
